@@ -1,7 +1,8 @@
 import React from "react";
+import './FlipClock.css'
 
 const FlipClock = () => {
-    return ( <div>FlipClock</div> );
+    return ( <h1>FlipClock</h1> );
 }
  
 export default FlipClock;
