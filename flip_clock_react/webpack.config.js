@@ -11,7 +11,8 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    port: 3005,
+    port: 3000,
+    hot: true,
     open: true,
   },
   resolve: {
