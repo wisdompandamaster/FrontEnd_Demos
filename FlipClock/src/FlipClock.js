@@ -3,7 +3,7 @@ import "./FlipClock.css";
 
 const FlipClock = () => {
   useEffect(() => {
-    const countToDate = new Date("2023-12-24");
+    const countToDate = new Date("2024-01-28");
     let previousTimeBetweenDates;
 
     // 250ms 刷新一次
