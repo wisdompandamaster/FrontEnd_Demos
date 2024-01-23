@@ -58,7 +58,7 @@ const FlipClock = () => {
   useEffect(() => {
     const countToDate = ddl;
 
-    let previousTimeBetweenDates;
+    // let previousTimeBetweenDates;
 
     // 250ms 刷新一次
     const interval = setInterval(() => {
