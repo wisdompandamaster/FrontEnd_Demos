@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./FlipClock.css";
+import redLogo from "../public/assets/logo_red.png";
+import whiteLogo from "../public/assets/logo_white.png";
 
 const Setting = (props) => {
-  let img_src = props.passed
-    ? "./assets/logo_red.png"
-    : "./assets/logo_white.png";
+  let img_src = props.passed ? redLogo : whiteLogo;
 
   const handleOnKeyDown = (e) => {
     // YYYY-MM-DD的正则表达式
@@ -58,7 +58,7 @@ const FlipClock = () => {
   useEffect(() => {
     const countToDate = ddl;
 
-    // let previousTimeBetweenDates;
+    let previousTimeBetweenDates;
 
     // 250ms 刷新一次
     const interval = setInterval(() => {

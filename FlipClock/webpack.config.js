@@ -9,6 +9,8 @@ module.exports = {
     path: path.join(__dirname, "/dist"), //打包后的文件存放的地方
     filename: "bundle.[hash].js", //打包后输出文件的文件名
     clean: true,
+    // 打包图片的配置
+    assetModuleFilename: "images/[hash][name][ext]",
   },
   devServer: {
     port: 3000,
@@ -35,6 +37,28 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpg|gif|jpeg)$/,
+        type: "asset/resource",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024,
+          },
+        },
+        // use: [
+        //   {
+        //     loader: "url-loader",
+        //     options: {
+        //       esModule: false,
+        //       name: "[name].[ext]",
+        //     },
+        //   },
+        // ],
+      },
+      // {
+      //   test: /\.(htm|html)$/,
+      //   loader: "html-withimg-loader",
+      // },
     ],
   },
   plugins: [
