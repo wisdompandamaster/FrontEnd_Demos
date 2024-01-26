@@ -10,7 +10,7 @@ module.exports = {
     filename: "bundle.[hash].js", //打包后输出文件的文件名
     clean: true,
     // 打包图片的配置
-    assetModuleFilename: "images/[hash][name][ext]",
+    assetModuleFilename: "images/[hash:8][name][ext]",
   },
   devServer: {
     port: 3000,
