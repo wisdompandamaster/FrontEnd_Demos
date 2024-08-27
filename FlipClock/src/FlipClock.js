@@ -197,7 +197,7 @@ const FlipClock = () => {
         </div>
       </div>
       <a className="ICPinfo" href="https://beian.miit.gov.cn/" target="_blank">
-        备案号：蜀ICP备2023022103号-1
+        备案号：蜀ICP备2023022103号
       </a>
     </>
   );
