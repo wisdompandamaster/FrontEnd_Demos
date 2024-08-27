@@ -41,5 +41,5 @@ jobs:
           host: ${{ secrets.USER_HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.USER_KEY }}
-          source: "./${ACTION_FOLDER}/dist/*"
+          source: "./dist/*"
           target: /home/www/wisdompanda
