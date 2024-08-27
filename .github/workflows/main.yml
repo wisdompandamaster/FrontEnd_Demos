@@ -43,4 +43,4 @@ jobs:
           pass: ${{ secrets.USER_PASS }}
           connect_timeout: 60s
           local: "./${ACTION_FOLDER}/dist/*"
-          remote: /www/wwwroot/wisdompanda.com/demo/${{env.ACTION_FOLDER}}
+          remote: /home/www/wisdompanda
