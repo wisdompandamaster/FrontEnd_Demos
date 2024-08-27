@@ -41,5 +41,5 @@ jobs:
           host: ${{ secrets.USER_HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.USER_KEY }}
-          source: "./FlipClock/dist/*"
+          source: "FlipClock/dist/*"
           target: /home/www/wisdompanda
