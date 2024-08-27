@@ -132,3 +132,12 @@ body {
 .setting:hover .ddl {
   width: 11.3vw;
 }
+.ICPinfo {
+  position: fixed;
+  width: 100%;
+  bottom: 1%;
+  font-size: 0.4rem;
+  color: #f7f7f7;
+  text-decoration: none;
+  text-align: center;
+}
